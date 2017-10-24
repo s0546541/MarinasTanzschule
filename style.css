@@ -6,6 +6,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.right {
+    text-align: end;
+}
+
 /* --------------------- */
 header {
     width: 100%;
@@ -40,6 +44,10 @@ nav {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
+nav a {
+    text-transform: uppercase;
+}
+
 .link-3 {
     transition: 0.4s;
     color: #333;
@@ -50,7 +58,7 @@ nav {
 }
 .link-3:hover {
     background-color: #EEA200;
-    color: white;
+    color: #333;
     padding: 10px 10px;
 }
 
@@ -110,17 +118,29 @@ nav {
 }
 
 .infobox {
-    background-color: #EEA200;
+    background-color: darkred;
+    color: lightgrey;
     flex: 1;
     padding: 3px;
     margin: 3px;
+}
+
+@media screen and (max-width: 620px) {
+    .first {
+        width: 100%;
+    }
+}
+
+.infobox h2 {
+    margin-bottom: 5px;
 }
 
 /* ================================= */
 
 .display {
     width: 100%;
-    background-color: #EEA200;
+    background-color: darkred;
+    color: lightgrey;
     padding: 5px;
     margin: 20px 0 20px 0;
     min-height: 200px;
@@ -137,6 +157,18 @@ footer {
 
 footer > div {
     max-width: 900px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
     color: lightgrey;
+    margin: 0 auto;
+}
+
+.footer-inhalt {
+    display: flex;
+    flex-direction: column;
+}
+
+footer a {
+    color: lightgrey;
+
 }
