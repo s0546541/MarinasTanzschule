@@ -15,7 +15,15 @@
 
 <header>
     <div id="banner">
-        <div id="banner-logo">Marinas Tanzschule</div>
+        <picture>
+            <!--<div id="banner-logo">Marinas Tanzschule</div>-->
+            <source class="responive-img" srcset="img/hintergrund_large.png, img/hintergrund_large.png 2x" media="(min-width: 1300px)">
+            <source class="responive-img" srcset="img/hintergrund_medium_large.png, img/hintergrund_medium_large.png 2x" media="(min-width: 800px)">
+            <source class="responive-img" srcset="img/hintergrund_medium.png, img/hintergrund_medium.png 2x" media="(min-width: 100px)">
+            <!---Fallback--->
+            <img class="responive-img" src="img/hintergrund_medium.png" alt="Marinas Tanzschule Logo"
+                 srcset="img/hintergrund_medium.png, img/hintergrund_medium.png 2x">
+        </picture>
     </div>
 
     <nav id="nav-3">
