@@ -49,39 +49,55 @@ header {
 
 /* --------------------- */
 
-nav {
-    margin-top: 0;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    text-align: center;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
 }
 
-nav a {
-    text-transform: uppercase;
-}
-
-.link-3 {
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    color: #333;
-    font-size: 20px;
+/* Navbar links */
+#navbar a {
+    color: #222222;
+    text-align: center;
+    padding: 14px;
     text-decoration: none;
-    padding: 0 10px;
-    margin: 0 10px;
 }
-.link-3:hover {
-    background-color: #EEA200;
-    color: #333;
-    padding: 10px 10px;
+
+#navbar a:hover {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+/* Page content */
+/*#content {
+    padding: 16px;
+}*/
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + #content {
+    padding-top: 60px;
 }
 
 /* ================================== */
 
 
 .ticker {
-    z-index: 10;
+    z-index: 1;
     max-width: 900px;
 
     margin: 0 auto;
@@ -221,14 +237,37 @@ nav a {
 }
 
 .slick-slide {
-    background-color: #a90000;
+    background-color: #dddddd;
+    color: #222222;
     padding: 5px;
     margin: 5px;
+    max-width: 350px;
 
     -webkit-box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.75);
     box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.75);
 
+}
+
+.slick-slide p {
+    margin-top: 5px;
+    float: left;
+}
+
+.event {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.event h3 {
+    background-color: #e9b22e;
+    color: #222222;
+    padding: 5px;
+}
+.event p {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 /* ================================= */
@@ -265,4 +304,102 @@ footer > div {
 footer a {
     color: lightgrey;
 
+}
+
+
+.btn {
+    position: relative;
+
+
+    display: inline;
+    float: right;
+    margin: 5px 5px 5px auto;
+    padding: 0;
+
+
+    overflow: hidden;
+
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+    background-color: dimgrey;
+    color: #ecf0f1;
+
+    transition: background-color .3s;
+}
+
+.btn:hover, .btn:focus {
+    background-color: grey;
+}
+
+.btn > * {
+    position: relative;
+}
+
+.btn span {
+    display: block;
+    padding: 12px 24px;
+}
+
+.btn:before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    width: 0;
+    padding-top: 0;
+
+    border-radius: 100%;
+
+    background-color: rgba(236, 240, 241, .3);
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+    width: 120%;
+    padding-top: 120%;
+
+    transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+
+/* - ------------------------------------- */
+/* Underline From Left */
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+}
+.hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #EEA200;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0;
 }

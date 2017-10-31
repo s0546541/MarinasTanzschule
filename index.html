@@ -11,7 +11,8 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onscroll="myFunction()">
+
 <div class="container">
     <header>
         <div id="banner">
@@ -28,15 +29,16 @@
                      srcset="img/hintergrund_medium.png, img/hintergrund_medium.png 2x">
             </picture>
         </div>
-
-        <nav id="nav-3">
-            <a class="link-3" href="#">Home</a>
-            <a class="link-3" href="#">Kurse</a>
-            <a class="link-3" href="#">Tanzkreise</a>
-            <a class="link-3" href="#">Kontakt</a>
-        </nav>
     </header>
-    <div class="body">
+        <div class="body">
+        <div id="navbar" >
+            <a class="hvr-underline-from-left" href="#">Home</a>
+            <a class="hvr-underline-from-left" href="#">Kurse</a>
+            <a class="hvr-underline-from-left" href="#">Tanzkreise</a>
+            <a class="hvr-underline-from-left" href="#">Kontakt</a>
+        </div>
+
+
         <!--<div class="ticker">
             <ul>
                 <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</li>
@@ -79,25 +81,39 @@
             <div class="news-slider">
                 <div>
                     <h3>News Nummer Eins</h3>
-                    <p>Das ist eine super interessante Neuigkeit</p>
+                    <p>Das ist eine super interessante Neuigkeit Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Accusamus corporis facere maxime mollitia
+                        quisquam rem! Ab accusamus ea, eius exercitationem hic id iste modi
+                        nobis obcaecati odio quaerat quasi temporibus.
+                        <button class="btn" type="button"><span>mehr Infos</span></button></p>
+
                 </div>
                 <div>
                     <h3>News Nummer Zwei</h3>
                     <p>Das ist eine super interessante Neuigkeit <br>
-                        Die hier ist sogar etwas länger <br> als die <br>anderen News</p>
+                        Die hier ist sogar etwas länger <br> als die <br>anderen News
+                        <button class="btn" type="button"><span>mehr Infos</span></button></p>
+
                 </div>
-                <div>
-                    <h3>News Nummer Drei</h3>
-                    <p>Das ist eine super interessante Neuigkeit</p>
+                <div class="event">
+                    <h3>Event - Name des Events</h3>
+                    <p>Das wird ein tolles Event wo man durch Anmeldung an diesem Event
+                        teilnehmen kann.
+                        <button class="btn" type="button"><span>zur Anmeldung</span></button></p>
+
                 </div>
                 <div>
                     <h3>News Nummer Vier</h3>
-                    <p>Das ist eine super interessante Neuigkeit</p>
+                    <p>Das ist eine super interessante Neuigkeit
+                        <button class="btn" type="button"><span>mehr Infos</span></button></p>
+
                 </div>
                 <div>
                     <h3>News Nummer Fünf</h3>
                     <p>Das ist eine super interessante Neuigkeit <br>
-                        Die hier ist sogar etwas länger <br> als die <br>anderen News</p>
+                        Die hier ist sogar etwas länger <br> als die <br>anderen News
+                        <button class="btn" type="button"><span>mehr Infos</span></button></p>
+
                 </div>
             </div>
         </div>
@@ -129,8 +145,8 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick-1.8.0/slick/slick.min.js"></script>
 <!--<script type="text/javascript" src="scripts/vTicker.js"></script>-->
-
 <script type="text/javascript" src="scripts/meinScript.js"></script>
+
 
 </body>
 </html>
