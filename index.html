@@ -12,114 +12,123 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="container">
+    <header>
+        <div id="banner">
+            <picture>
+                <!--<div id="banner-logo">Marinas Tanzschule</div>-->
+                <source class="responive-img" srcset="img/hintergrund_large.png, img/hintergrund_large.png 2x"
+                        media="(min-width: 1300px)">
+                <source class="responive-img" srcset="img/hintergrund_medium_large.png, img/hintergrund_medium_large.png 2x"
+                        media="(min-width: 800px)">
+                <source class="responive-img" srcset="img/hintergrund_medium.png, img/hintergrund_medium.png 2x"
+                        media="(min-width: 100px)">
+                <!---Fallback--->
+                <img class="responive-img" src="img/hintergrund_medium.png" alt="Marinas Tanzschule Logo"
+                     srcset="img/hintergrund_medium.png, img/hintergrund_medium.png 2x">
+            </picture>
+        </div>
 
-<header>
-    <div id="banner">
-        <picture>
-            <!--<div id="banner-logo">Marinas Tanzschule</div>-->
-            <source class="responive-img" srcset="img/hintergrund_large.png, img/hintergrund_large.png 2x" media="(min-width: 1300px)">
-            <source class="responive-img" srcset="img/hintergrund_medium_large.png, img/hintergrund_medium_large.png 2x" media="(min-width: 800px)">
-            <source class="responive-img" srcset="img/hintergrund_medium.png, img/hintergrund_medium.png 2x" media="(min-width: 100px)">
-            <!---Fallback--->
-            <img class="responive-img" src="img/hintergrund_medium.png" alt="Marinas Tanzschule Logo"
-                 srcset="img/hintergrund_medium.png, img/hintergrund_medium.png 2x">
-        </picture>
-    </div>
-
-    <nav id="nav-3">
-        <a class="link-3" href="#">Home</a>
-        <a class="link-3" href="#">Kurse</a>
-        <a class="link-3" href="#">Tanzkreise</a>
-        <a class="link-3" href="#">Kontakt</a>
-    </nav>
-</header>
-<div class="body">
-    <div class="ticker" hidden>Achtung! Alle Kurse fallen leider heute aus! <br>
-        Außerdem fällt morgen auch alles aus <br>
-        Ich schreibe hier mal noch ganz viel zeug hin, damit das hier auch schön voll wird. <br>
-        Du kannst mich anklicken, damit ich verschwinde..
-        Schaut mal über mir! Da ist der neue Header, der fast so aussieht wie euer Gutschein :D
-    </div>
+        <nav id="nav-3">
+            <a class="link-3" href="#">Home</a>
+            <a class="link-3" href="#">Kurse</a>
+            <a class="link-3" href="#">Tanzkreise</a>
+            <a class="link-3" href="#">Kontakt</a>
+        </nav>
+    </header>
+    <div class="body">
+        <!--<div class="ticker">
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</li>
+                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</li>
+                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</li>
+            </ul>
+        </div>-->
 
 
-    <div id="content">
-        <figure>
-            <img src="http://via.placeholder.com/762x508" alt="">
-        </figure>
-        <aside>
-            <div class="infobox first">
-                <h3>Bürozeiten Buch</h3>
-                <p>
-                    Mo. 10:00 - 12:00 Uhr<br>
-                    Mi. ab 16:00 Uhr <br>
-                    nach tel. Absprache
-                </p>
-            </div>
-            <div class="infobox">
-                <h3>Telefon</h3>
-                <p>030 - 85713918</p>
-                <h3>Mobil</h3>
-                <p>0173 - 8288400</p>
-            </div>
-            <div class="infobox">
-                <h3>Anfahrt</h3>
-                <p>Wiltbergstr. 50 / Haus 20 <br>
-                    13125 Berlin-Buch</p>
-            </div>
-        </aside>
-    </div>
+        <div id="content">
+            <figure>
+                <!--<img src="http://via.placeholder.com/762x508" alt="">-->
+                <img src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.50plus.de%2Fuploads%2Fpics%2FTanzen_01.png&f=1" alt="">
+            </figure>
+            <aside>
+                <div class="infobox first">
+                    <h3>Bürozeiten Buch</h3>
+                    <p>
+                        Mo. 10:00 - 12:00 Uhr<br>
+                        Mi. ab 16:00 Uhr <br>
+                        nach tel. Absprache
+                    </p>
+                </div>
+                <div class="infobox">
+                    <h3>Telefon</h3>
+                    <p>030 - 85713918</p>
+                    <h3>Mobil</h3>
+                    <p>0173 - 8288400</p>
+                </div>
+                <div class="infobox">
+                    <h3>Anfahrt</h3>
+                    <p>Wiltbergstr. 50 / Haus 20 <br>
+                        13125 Berlin-Buch</p>
+                </div>
 
-    <div class="display"><h2>News</h2>
-        <div class="news-slider">
-            <div>
-                <h3>News Nummer Eins</h3>
-                <p>Das ist eine super interessante Neuigkeit</p>
-            </div>
-            <div>
-                <h3>News Nummer Zwei</h3>
-                <p>Das ist eine super interessante Neuigkeit <br>
-                    Die hier ist sogar etwas länger <br> als die <br>anderen News</p>
-            </div>
-            <div>
-                <h3>News Nummer Drei</h3>
-                <p>Das ist eine super interessante Neuigkeit</p>
-            </div>
-            <div>
-                <h3>News Nummer Vier</h3>
-                <p>Das ist eine super interessante Neuigkeit</p>
-            </div>
-            <div>
-                <h3>News Nummer Fünf</h3>
-                <p>Das ist eine super interessante Neuigkeit <br>
-                    Die hier ist sogar etwas länger <br> als die <br>anderen News</p>
+            </aside>
+        </div>
+
+        <div class="display"><h2>News</h2>
+            <div class="news-slider">
+                <div>
+                    <h3>News Nummer Eins</h3>
+                    <p>Das ist eine super interessante Neuigkeit</p>
+                </div>
+                <div>
+                    <h3>News Nummer Zwei</h3>
+                    <p>Das ist eine super interessante Neuigkeit <br>
+                        Die hier ist sogar etwas länger <br> als die <br>anderen News</p>
+                </div>
+                <div>
+                    <h3>News Nummer Drei</h3>
+                    <p>Das ist eine super interessante Neuigkeit</p>
+                </div>
+                <div>
+                    <h3>News Nummer Vier</h3>
+                    <p>Das ist eine super interessante Neuigkeit</p>
+                </div>
+                <div>
+                    <h3>News Nummer Fünf</h3>
+                    <p>Das ist eine super interessante Neuigkeit <br>
+                        Die hier ist sogar etwas länger <br> als die <br>anderen News</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="display"><h2>Galerie</h2></div>
-    <div class="display"><h2>Anfahrt</h2></div>
+        <div class="display"><h2>Galerie</h2></div>
+        <div class="display"><h2>Anfahrt</h2></div>
 
+    </div>
+
+
+    <footer>
+        <div>
+            <div class="footer-inhalt">
+                <a href="#">Impressum</a>
+                <a href="#">AGBs</a>
+            </div>
+            <div class="footer-inhalt right">
+                Marinas Tanzschule <br>
+                Wiltbergstr. 50 / Haus 20 <br>
+                13125 Berlin-Buch
+            </div>
+        </div>
+
+    </footer>
 </div>
 
-
-<footer>
-    <div>
-        <div class="footer-inhalt">
-            <a href="#">Impressum</a>
-            <a href="#">AGBs</a>
-        </div>
-        <div class="footer-inhalt right">
-            Marinas Tanzschule <br>
-            Wiltbergstr. 50 / Haus 20 <br>
-            13125 Berlin-Buch
-        </div>
-    </div>
-
-</footer>
 
 
 <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick-1.8.0/slick/slick.min.js"></script>
+<!--<script type="text/javascript" src="scripts/vTicker.js"></script>-->
 
 <script type="text/javascript" src="scripts/meinScript.js"></script>
 

@@ -6,6 +6,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.container {
+    background-color: #333333;
+}
+
 .right {
     text-align: end;
 }
@@ -51,6 +55,7 @@ nav {
     padding-bottom: 13px;
     text-align: center;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    background-color: white;
 }
 
 nav a {
@@ -74,12 +79,14 @@ nav a {
 
 /* ================================== */
 
+
 .ticker {
     z-index: 10;
     max-width: 900px;
+
     margin: 0 auto;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 1px;
     text-align: center;
     font-weight: bold;
     box-shadow:  inset 0 2px 5px 0;
@@ -87,7 +94,14 @@ nav a {
     background-color: #EEA200;
 }
 
+.ticker ul {
+    list-style: none;
+    width: 100%;
+}
 
+.ticker ul li {
+
+}
 
 #content {
     max-width: 900px;
@@ -150,8 +164,8 @@ nav a {
         display: flex;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
@@ -163,21 +177,25 @@ nav a {
 
 .infobox {
     background-color: darkred;
+
+    /* background: #d14b29; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ae2416 0%, #aa0000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #ae2416 0%,#aa0000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #ae2416 0%,#aa0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d14b29', endColorstr='#aa0000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
     color: whitesmoke;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
     padding: 3px;
     margin: 3px;
+    text-align: center;
 }
 
-@media screen and (max-width: 620px) {
-    .first {
-        width: 100%;
-    }
-}
 
-.infobox h2 {
+
+.infobox h3 {
     margin-bottom: 5px;
 }
 
@@ -190,6 +208,12 @@ nav a {
     padding: 5px;
     margin: 20px 0 20px 0;
     min-height: 200px;
+
+    /* background: #d14b29; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ae2416 0%, #aa0000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #ae2416 0%,#aa0000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #ae2416 0%,#aa0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d14b29', endColorstr='#aa0000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .display h2 {

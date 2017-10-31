@@ -2,28 +2,39 @@ $(document).ready(function () {
 
     // News Slider
 
-    $('.news-slider').slick({
-        dots: true,
-        infinite: false,
-        initialSlide: 1,
-        speed: 300,
-        slidesToShow: 1,
-        centerMode: true,
-        variableWidth: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        arrows: false
-    });
+        $('.news-slider').slick({
+            dots: true,
+            infinite: false,
+            initialSlide: 1,
+            speed: 300,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            arrows: false
+        });
 
-    // Ticker
+    /*// Ticker
     if ($(".ticker").text().length > 0) {
 
         $(".ticker").slideDown();
+
+
     }
 
     $(".ticker").click(function () {
         $(this).slideUp();
-    });
+    })*/
 
+
+// vTicker Plugin
+   /* $('.ticker').vTicker('init', {
+        speed: 1000,
+        pause: 1000,
+        showItems: 1,
+        padding: 10
+    });
+*/
 });
 
